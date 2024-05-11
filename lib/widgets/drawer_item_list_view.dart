@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:responsive_credit_card_app/models/drawer_item_model.dart';
 import 'package:responsive_credit_card_app/utils/app_images.dart';
@@ -49,7 +47,6 @@ class _DrawerItemListViewState extends State<DrawerItemListView> {
             if (activeIndex != index) {
               setState(() {
                 activeIndex = index;
-                log(activeIndex.toString());
               });
             }
           },
