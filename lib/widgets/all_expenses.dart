@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_credit_card_app/models/all_expenses_item_model.dart';
+import 'package:responsive_credit_card_app/utils/app_images.dart';
 import 'package:responsive_credit_card_app/widgets/all_expenses_header.dart';
+import 'package:responsive_credit_card_app/widgets/all_expenses_item.dart';
 
 class AllExpenses extends StatelessWidget {
   const AllExpenses({super.key});
@@ -16,6 +19,13 @@ class AllExpenses extends StatelessWidget {
       child: const Column(
         children: [
           AllExpensesHeader(),
+          AllExpensesItem(
+            itemModel: AllExpensesItemModel(
+                image: Assets.imagesIncome,
+                title: 'Income',
+                date: 'April 2022',
+                price: r'$20,129'),
+          )
         ],
       ),
     );
