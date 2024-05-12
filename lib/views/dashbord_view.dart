@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_credit_card_app/widgets/adabtive_lauout_widget.dart';
-import 'package:responsive_credit_card_app/widgets/dashbord_desktop_layout.dart';
+import 'package:responsive_credit_card_app/widgets/adabtive_layout_widget.dart';
+import 'package:responsive_credit_card_app/widgets/drawer/dashbord_desktop_layout.dart';
 
 class DashBordView extends StatelessWidget {
   const DashBordView({super.key});

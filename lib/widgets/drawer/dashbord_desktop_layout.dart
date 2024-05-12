@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
-import 'package:responsive_credit_card_app/widgets/all_expenses.dart';
-import 'package:responsive_credit_card_app/widgets/custom_drawer.dart';
+import 'package:responsive_credit_card_app/widgets/all_expenses/all_expenses.dart';
+import 'package:responsive_credit_card_app/widgets/drawer/custom_drawer.dart';
 
 class DashBordDesktopLayout extends StatelessWidget {
   const DashBordDesktopLayout({super.key});
