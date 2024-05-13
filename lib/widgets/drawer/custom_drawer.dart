@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/models/drawer_item_model.dart';
+import 'package:responsive_credit_card_app/models/user_info_model.dart';
 import 'package:responsive_credit_card_app/utils/app_images.dart';
 import 'package:responsive_credit_card_app/widgets/drawer/active_and_inactive_item.dart';
 import 'package:responsive_credit_card_app/widgets/drawer/drawer_item_list_view.dart';
@@ -19,9 +20,7 @@ class CustomDrawer extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: UserInfoListTile(
-              image: Assets.imagesAvatar2,
-              title: 'Lekan Okeowo',
-              subtitle: 'demo@gmail.com',
+              userInfoModel: UserInfoModel(imgae: Assets.imagesAvatar2, title: 'Lekan Okeowo', subtitle: 'demo@gmail.com'),
             ),
           ),
           SliverToBoxAdapter(child: Gap(8)),
