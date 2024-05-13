@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_credit_card_app/widgets/for_all/custom_back_ground_container.dart';
-import 'package:responsive_credit_card_app/widgets/quick_invoice/latest_transaction_list_view.dart';
+import 'package:responsive_credit_card_app/widgets/quick_invoice/latest_transaction.dart';
+import 'package:responsive_credit_card_app/widgets/quick_invoice/quick_invoice_form.dart';
 import 'package:responsive_credit_card_app/widgets/quick_invoice/quick_invoice_header.dart';
 
 class QuickInvoice extends StatelessWidget {
@@ -11,7 +12,15 @@ class QuickInvoice extends StatelessWidget {
     return const CustomBackGroundContainer(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [QuickInvoiceHeader(), LatestTransactionListView()],
+        children: [
+          QuickInvoiceHeader(),
+          LatestTransaction(),
+          Divider(
+            height: 48,
+            color: Color(0xffF1F1F1),
+          ),
+          QuickInvoiceForm()
+        ],
       ),
     );
   }

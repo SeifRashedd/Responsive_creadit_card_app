@@ -22,7 +22,7 @@ class DashBordDesktopLayout extends StatelessWidget {
           child: Column(
             children: [
               AllExpenses(),
-              Gap(24),
+              Gap(10),
               QuickInvoice(),
             ],
           ),

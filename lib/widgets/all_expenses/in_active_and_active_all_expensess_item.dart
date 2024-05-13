@@ -29,7 +29,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
           AllExpensesItemHeader(
             image: itemModel.image,
           ),
-          const Gap(34),
+          const Gap(5),
           Text(
             itemModel.title,
             style: AppStyle.styleMedium16,
@@ -76,7 +76,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
             imageColor: Colors.white,
             image: itemModel.image,
           ),
-          const Gap(34),
+          const Gap(5),
           Text(
             itemModel.title,
             style: AppStyle.styleMedium16.copyWith(color: Colors.white),
