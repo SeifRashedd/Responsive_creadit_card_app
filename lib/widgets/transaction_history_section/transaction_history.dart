@@ -15,6 +15,7 @@ class TransactionHistory extends StatelessWidget {
         TransactionHistoryHeader(),
         Gap(20),
         Text('13 April 2022', style: AppStyle.styleDateTransactionHistory),
+        Gap(16),
         TransactionHistoryListView(),
       ],
     );
