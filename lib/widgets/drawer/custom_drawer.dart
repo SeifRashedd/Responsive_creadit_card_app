@@ -20,7 +20,10 @@ class CustomDrawer extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: UserInfoListTile(
-              userInfoModel: UserInfoModel(imgae: Assets.imagesAvatar2, title: 'Lekan Okeowo', subtitle: 'demo@gmail.com'),
+              userInfoModel: UserInfoModel(
+                  imgae: Assets.imagesAvatar2,
+                  title: 'Lekan Okeowo',
+                  subtitle: 'demo@gmail.com'),
             ),
           ),
           SliverToBoxAdapter(child: Gap(8)),
@@ -37,12 +40,12 @@ class CustomDrawer extends StatelessWidget {
                 InActiveDraweItem(
                   drawerItemModel: DrawerItemModel(
                       title: 'Setting system',
-                      image: Assets.imagesSettingsystem),
+                      image: Assets.imagesSettingSystem),
                 ),
                 InActiveDraweItem(
                   drawerItemModel: DrawerItemModel(
                       title: 'Logout account',
-                      image: Assets.imagesLogoutaccount),
+                      image: Assets.imagesLogoutAccount),
                 ),
                 Gap(48),
               ],
