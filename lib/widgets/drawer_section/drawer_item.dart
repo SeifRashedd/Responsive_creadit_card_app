@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_credit_card_app/models/drawer_item_model.dart';
-import 'package:responsive_credit_card_app/widgets/drawer/active_and_inactive_item.dart';
+import 'package:responsive_credit_card_app/widgets/drawer_section/active_and_inactive_item.dart';
 
 class DrawerItem extends StatelessWidget {
   const DrawerItem(

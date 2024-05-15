@@ -5,9 +5,9 @@ import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/models/drawer_item_model.dart';
 import 'package:responsive_credit_card_app/models/user_info_model.dart';
 import 'package:responsive_credit_card_app/utils/app_images.dart';
-import 'package:responsive_credit_card_app/widgets/drawer/active_and_inactive_item.dart';
-import 'package:responsive_credit_card_app/widgets/drawer/drawer_item_list_view.dart';
-import 'package:responsive_credit_card_app/widgets/drawer/user_info_list_tile.dart';
+import 'package:responsive_credit_card_app/widgets/drawer_section/active_and_inactive_item.dart';
+import 'package:responsive_credit_card_app/widgets/drawer_section/drawer_item_list_view.dart';
+import 'package:responsive_credit_card_app/widgets/drawer_section/user_info_list_tile.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});

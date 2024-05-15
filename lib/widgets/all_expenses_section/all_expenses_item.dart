@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_credit_card_app/models/all_expenses_item_model.dart';
-import 'package:responsive_credit_card_app/widgets/all_expenses/in_active_and_active_all_expensess_item.dart';
+import 'package:responsive_credit_card_app/widgets/all_expenses_section/in_active_and_active_all_expensess_item.dart';
 
 class AllExpensesItem extends StatelessWidget {
   const AllExpensesItem(

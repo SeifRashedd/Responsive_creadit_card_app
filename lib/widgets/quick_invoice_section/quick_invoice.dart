@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_credit_card_app/widgets/for_all/custom_back_ground_container.dart';
-import 'package:responsive_credit_card_app/widgets/quick_invoice/latest_transaction.dart';
-import 'package:responsive_credit_card_app/widgets/quick_invoice/quick_invoice_form.dart';
-import 'package:responsive_credit_card_app/widgets/quick_invoice/quick_invoice_header.dart';
+import 'package:responsive_credit_card_app/widgets/quick_invoice_section/latest_transaction.dart';
+import 'package:responsive_credit_card_app/widgets/quick_invoice_section/quick_invoice_form.dart';
+import 'package:responsive_credit_card_app/widgets/quick_invoice_section/quick_invoice_header.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});

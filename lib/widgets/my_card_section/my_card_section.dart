@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/utils/app_styles.dart';
-import 'package:responsive_credit_card_app/widgets/for_all/dots_indicator.dart';
-import 'package:responsive_credit_card_app/widgets/my_card/my_card_list_view.dart';
+import 'package:responsive_credit_card_app/widgets/my_card_section/dots_indicator.dart';
+import 'package:responsive_credit_card_app/widgets/my_card_section/my_card_list_view.dart';
 
 class MyCardSection extends StatefulWidget {
   const MyCardSection({super.key});

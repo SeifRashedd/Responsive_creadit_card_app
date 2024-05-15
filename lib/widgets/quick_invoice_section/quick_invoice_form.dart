@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
-import 'package:responsive_credit_card_app/widgets/quick_invoice/custom_button.dart';
-import 'package:responsive_credit_card_app/widgets/quick_invoice/title_text_filed.dart';
+import 'package:responsive_credit_card_app/widgets/quick_invoice_section/custom_button.dart';
+import 'package:responsive_credit_card_app/widgets/quick_invoice_section/title_text_filed.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
   const QuickInvoiceForm({super.key});

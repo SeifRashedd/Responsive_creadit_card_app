@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/utils/app_styles.dart';
-import 'package:responsive_credit_card_app/widgets/quick_invoice/custom_text_filed.dart';
+import 'package:responsive_credit_card_app/widgets/quick_invoice_section/custom_text_filed.dart';
 
 class TitleTextFiled extends StatelessWidget {
   const TitleTextFiled({super.key, required this.title, required this.hint});

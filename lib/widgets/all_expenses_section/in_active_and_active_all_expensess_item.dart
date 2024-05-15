@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/models/all_expenses_item_model.dart';
 import 'package:responsive_credit_card_app/utils/app_styles.dart';
-import 'package:responsive_credit_card_app/widgets/all_expenses/all_expenses_item_header.dart';
+import 'package:responsive_credit_card_app/widgets/all_expenses_section/all_expenses_item_header.dart';
 
 class InActiveAllExpensesItem extends StatelessWidget {
   const InActiveAllExpensesItem({
