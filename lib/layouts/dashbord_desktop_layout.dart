@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/widgets/for_all/all_expenses_and_quick_invoice_section.dart';
 import 'package:responsive_credit_card_app/widgets/drawer_section/custom_drawer.dart';
-import 'package:responsive_credit_card_app/widgets/my_card_section/my_card_section.dart';
+import 'package:responsive_credit_card_app/widgets/transaction_history_section/transaction_history.dart';
 
 class DashBordDesktopLayout extends StatelessWidget {
   const DashBordDesktopLayout({super.key});
@@ -22,7 +22,7 @@ class DashBordDesktopLayout extends StatelessWidget {
           child: AllExpensesAndQuickInvoiceSection(),
         ),
         Gap(24),
-        Expanded(child: MyCardSection()),
+        Expanded(child: TransactionHistory()),
       ],
     );
   }

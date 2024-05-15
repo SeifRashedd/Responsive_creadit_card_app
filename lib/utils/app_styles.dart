@@ -62,4 +62,10 @@ abstract class AppStyle {
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w500,
   );
+  static const TextStyle styleDateTransactionHistory = TextStyle(
+    color: Color(0xffAAAAAA),
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w500,
+  );
 }
