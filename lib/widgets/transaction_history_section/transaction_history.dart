@@ -13,9 +13,9 @@ class TransactionHistory extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         TransactionHistoryHeader(),
-        Gap(20),
+        Gap(10),
         Text('13 April 2022', style: AppStyle.styleDateTransactionHistory),
-        Gap(16),
+        Gap(10),
         TransactionHistoryListView(),
       ],
     );

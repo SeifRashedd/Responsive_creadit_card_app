@@ -36,11 +36,11 @@ class _MyCardSectionState extends State<MyCardSection> {
           'My Card',
           style: AppStyle.styleSemiBold20,
         ),
-        const Gap(20),
+        const Gap(10),
         MyCardPageView(
           pageController: pageController,
         ),
-        const Gap(20),
+        const Gap(10),
         DotsIndecator(
           currentPageIndex: currentPageIndex,
         ),
