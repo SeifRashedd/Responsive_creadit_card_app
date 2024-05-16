@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_credit_card_app/widgets/for_all/custom_back_ground_container.dart';
 import 'package:responsive_credit_card_app/widgets/income_section/income_chart.dart';
+import 'package:responsive_credit_card_app/widgets/income_section/income_details.dart';
 import 'package:responsive_credit_card_app/widgets/income_section/income_section_header.dart';
 
 class IncomeSection extends StatelessWidget {
@@ -17,7 +18,12 @@ class IncomeSection extends StatelessWidget {
         Expanded(
           child: Row(
             children: [
-              Expanded(child: InComeChart()),
+              Expanded(
+                child: InComeChart(),
+              ),
+              Expanded(
+                child: InComeDetails(),
+              ),
             ],
           ),
         ),
