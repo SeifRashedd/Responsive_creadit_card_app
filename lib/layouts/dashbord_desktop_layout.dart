@@ -4,7 +4,6 @@ import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/widgets/for_all/all_expenses_and_quick_invoice_section.dart';
 import 'package:responsive_credit_card_app/widgets/drawer_section/custom_drawer.dart';
-
 import 'package:responsive_credit_card_app/widgets/income_section/income_section.dart';
 
 class DashBordDesktopLayout extends StatelessWidget {
@@ -26,5 +25,15 @@ class DashBordDesktopLayout extends StatelessWidget {
         Expanded(child: IncomeSection()),
       ],
     );
+  }
+}
+
+
+class Test extends StatelessWidget {
+  const Test({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
