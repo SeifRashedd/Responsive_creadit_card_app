@@ -10,14 +10,12 @@ class AllExpensesAndQuickInvoiceSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(children: const [
-      Column(
-        children: [
-          AllExpenses(),
-          Gap(10),
-          QuickInvoice(),
-        ],
-      ),
-    ]);
+    return const Column(
+      children: [
+        AllExpenses(),
+        Gap(10),
+        QuickInvoice(),
+      ],
+    );
   }
 }
