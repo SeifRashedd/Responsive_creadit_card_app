@@ -25,11 +25,16 @@ class TransactionHistoryListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        itemCount: items.length,
-        shrinkWrap: true,
-        itemBuilder: (context, index) {
-          return TransactionItem(transactionModel: items[index]);
-        });
+    // cuz we will all of the all expenses,quick invoice section,my card and transaction history in the same list view so we should make it as colume.
+    return Column(
+      children: items.map((e) => TransactionItem(transactionModel: e)).toList(),
+    );
+
+    // return ListView.builder(
+    //     itemCount: items.length,
+    //     shrinkWrap: true,
+    //     itemBuilder: (context, index) {
+    //       return TransactionItem(transactionModel: items[index]);
+    //     });
   }
 }
