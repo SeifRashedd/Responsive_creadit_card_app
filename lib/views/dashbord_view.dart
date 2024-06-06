@@ -3,6 +3,7 @@ import 'package:responsive_credit_card_app/layouts/adabtive_layout_widget.dart';
 import 'package:responsive_credit_card_app/layouts/dashbord_desktop_layout.dart';
 import 'package:responsive_credit_card_app/layouts/dashbord_mobile_layout.dart';
 import 'package:responsive_credit_card_app/layouts/dashbord_tablet_layout.dart';
+import 'package:responsive_credit_card_app/utils/size_config.dart';
 import 'package:responsive_credit_card_app/widgets/drawer_section/custom_drawer.dart';
 
 class DashBordView extends StatefulWidget {
@@ -18,7 +19,7 @@ class _DashBordViewState extends State<DashBordView> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      appBar: MediaQuery.sizeOf(context).width < 800
+      appBar: MediaQuery.sizeOf(context).width < SizeConfig.tablet
           ? AppBar(
               elevation: 0,
               backgroundColor: const Color(0xFF4DB7F2),
@@ -34,7 +35,7 @@ class _DashBordViewState extends State<DashBordView> {
           : null,
       backgroundColor: const Color(0xffF7F9FA),
       drawer:
-          MediaQuery.sizeOf(context).width < 800 ? const CustomDrawer() : null,
+          MediaQuery.sizeOf(context).width < SizeConfig.tablet ? const CustomDrawer() : null,
       body: AdabtiveLayout(
         mobileLayout: (context) => const DashBordMobileLayout(),
         tabletLayout: (context) => const DashBordTabletLayout(),
