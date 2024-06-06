@@ -16,7 +16,7 @@ class InComeDetails extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    // cuz we will all of the all expenses,quick invoice section,my card and transaction history in the same list view so we should make it as colume.
+    // cuz we have all of the all expenses,quick invoice section,my card and transaction history in the same list view so we should make it as colume.
     return Column(
       children: items.map((e) => ItemsDetails(itemsDetailsModel: e)).toList(),
     );
@@ -26,15 +26,5 @@ class InComeDetails extends StatelessWidget {
     //   itemBuilder: (context, index) {
     //     return ItemsDetails(itemsDetailsModel: items[index]);
     //   },);
-  }
-}
-
-
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

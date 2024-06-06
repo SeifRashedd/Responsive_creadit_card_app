@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_credit_card_app/widgets/for_all/custom_back_ground_container.dart';
-import 'package:responsive_credit_card_app/widgets/income_section/income_chart.dart';
-import 'package:responsive_credit_card_app/widgets/income_section/income_details.dart';
+import 'package:responsive_credit_card_app/widgets/income_section/income_section_body.dart';
 import 'package:responsive_credit_card_app/widgets/income_section/income_section_header.dart';
 
 class IncomeSection extends StatelessWidget {
@@ -15,18 +14,10 @@ class IncomeSection extends StatelessWidget {
         child: Column(
       children: [
         InComeSectionHeader(),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Expanded(
-              child: InComeChart(),
-            ),
-            Expanded(
-              child: InComeDetails(),
-            ),
-          ],
-        ),
+        IncomeSectionBody(),
       ],
     ));
   }
 }
+
+
