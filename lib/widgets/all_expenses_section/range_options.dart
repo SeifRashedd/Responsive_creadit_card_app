@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/utils/app_styles.dart';
@@ -21,7 +23,7 @@ class RangeOptions extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
       ),
-      child: const Row(
+      child:  Row(
         children: [
           Text(
             'Monthly',

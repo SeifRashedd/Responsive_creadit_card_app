@@ -29,7 +29,7 @@ class MyCard extends StatelessWidget {
                   const EdgeInsets.only(left: 31, right: 42, top: 16),
               title: Text('Name Card',
                   style: AppStyle.styleRegular16.copyWith(color: Colors.white)),
-              subtitle: const Text(
+              subtitle:  Text(
                 'Syah Bandi',
                 style: AppStyle.styleMedium20,
               ),
