@@ -27,7 +27,7 @@ class RangeOptions extends StatelessWidget {
         children: [
           Text(
             'Monthly',
-            style: AppStyle.styleMedium16,
+            style: AppStyle.styleMedium16(context),
           ),
           Gap(18),
           Icon(

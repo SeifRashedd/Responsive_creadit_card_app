@@ -14,7 +14,7 @@ class InComeSectionHeader extends StatelessWidget {
     return  Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('Income', style: AppStyle.styleSemiBold20),
+        Text('Income', style: AppStyle.styleSemiBold20(context)),
         const RangeOptions(),
       ],
     );

@@ -32,17 +32,17 @@ class InActiveAllExpensesItem extends StatelessWidget {
           const Gap(5),
           Text(
             itemModel.title,
-            style: AppStyle.styleMedium16,
+            style: AppStyle.styleMedium16(context),
           ),
           const Gap(8),
           Text(
             itemModel.date,
-            style: AppStyle.styleRegular14,
+            style: AppStyle.styleRegular14(context),
           ),
           const Gap(16),
           Text(
             itemModel.price,
-            style: AppStyle.styleSemiBold24,
+            style: AppStyle.styleSemiBold24(context),
           ),
         ],
       ),
@@ -79,18 +79,18 @@ class ActiveAllExpensesItem extends StatelessWidget {
           const Gap(5),
           Text(
             itemModel.title,
-            style: AppStyle.styleMedium16.copyWith(color: Colors.white),
+            style: AppStyle.styleMedium16(context).copyWith(color: Colors.white),
           ),
           const Gap(8),
           Text(
             itemModel.date,
-            style: AppStyle.styleRegular14
+            style: AppStyle.styleRegular14(context)
                 .copyWith(color: const Color(0xFFFAFAFA)),
           ),
           const Gap(16),
           Text(
             itemModel.price,
-            style: AppStyle.styleSemiBold24.copyWith(color: Colors.white),
+            style: AppStyle.styleSemiBold24(context).copyWith(color: Colors.white),
           ),
         ],
       ),

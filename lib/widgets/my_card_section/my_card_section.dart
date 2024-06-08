@@ -34,7 +34,7 @@ class _MyCardSectionState extends State<MyCardSection> {
       children: [
          Text(
           'My Card',
-          style: AppStyle.styleSemiBold20,
+          style: AppStyle.styleSemiBold20(context),
         ),
         const Gap(10),
         MyCardPageView(
