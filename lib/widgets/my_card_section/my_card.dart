@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_credit_card_app/utils/app_images.dart';
 import 'package:responsive_credit_card_app/utils/app_styles.dart';
@@ -28,8 +29,9 @@ class MyCard extends StatelessWidget {
               contentPadding:
                   const EdgeInsets.only(left: 31, right: 42, top: 16),
               title: Text('Name Card',
-                  style: AppStyle.styleRegular16(context).copyWith(color: Colors.white)),
-              subtitle:  Text(
+                  style: AppStyle.styleRegular16(context)
+                      .copyWith(color: Colors.white)),
+              subtitle: Text(
                 'Syah Bandi',
                 style: AppStyle.styleMedium20(context),
               ),
@@ -43,14 +45,14 @@ class MyCard extends StatelessWidget {
                 children: [
                   Text(
                     '0918 8124 0042 8129',
-                    style:
-                        AppStyle.styleSemiBold24(context).copyWith(color: Colors.white),
+                    style: AppStyle.styleSemiBold24(context)
+                        .copyWith(color: Colors.white),
                   ),
                   Text('12/20 - 124',
                       style: AppStyle.styleRegular16(context)
                           .copyWith(color: Colors.white)),
                   const SizedBox(
-                    height: 54 - 28,
+                    height: 40 - 28,
                   )
                 ],
               ),
