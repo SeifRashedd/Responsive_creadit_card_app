@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/models/all_expenses_item_model.dart';
 import 'package:responsive_credit_card_app/utils/app_images.dart';
 import 'package:responsive_credit_card_app/widgets/all_expenses_section/all_expenses_item.dart';
@@ -35,38 +36,44 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
   @override
   Widget build(BuildContext context) {
     return Row(
-        children: items.asMap().entries.map((e) {
-      int index = e.key;
-      var item = e.value;
-      if (index == 1) {
-        return Expanded(
+      children: [
+        Expanded(
           child: GestureDetector(
             onTap: () {
-              updateIndex(index);
-            },
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: AllExpensesItem(
-                isSelected: selectedIndex == index,
-                itemModel: item,
-              ),
-            ),
-          ),
-        );
-      } else {
-        return Expanded(
-          child: GestureDetector(
-            onTap: () {
-              updateIndex(index);
+              updateIndex(0);
             },
             child: AllExpensesItem(
-              isSelected: selectedIndex == index,
-              itemModel: item,
+              isSelected: selectedIndex == 0,
+              itemModel: items[0],
             ),
           ),
-        );
-      }
-    }).toList());
+        ),
+        const Gap(8),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              updateIndex(1);
+            },
+            child: AllExpensesItem(
+              isSelected: selectedIndex == 1,
+              itemModel: items[1],
+            ),
+          ),
+        ),
+        const Gap(8),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              updateIndex(2);
+            },
+            child: AllExpensesItem(
+              isSelected: selectedIndex == 2,
+              itemModel: items[2],
+            ),
+          ),
+        ),
+      ],
+    );
   }
 
   void updateIndex(int index) {

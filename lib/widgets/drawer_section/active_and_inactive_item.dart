@@ -42,9 +42,12 @@ class ActiveDraweItem extends StatelessWidget {
       title: FittedBox(
         alignment: AlignmentDirectional.centerStart,
         fit: BoxFit.scaleDown,
-        child: Text(
-          drawerItemModel.title,
-          style: AppStyle.stylBold16(context),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            drawerItemModel.title,
+            style: AppStyle.stylBold16(context),
+          ),
         ),
       ),
       trailing: Container(

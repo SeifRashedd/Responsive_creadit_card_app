@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_credit_card_app/models/all_expenses_item_model.dart';
 import 'package:responsive_credit_card_app/utils/app_styles.dart';
@@ -30,19 +33,28 @@ class InActiveAllExpensesItem extends StatelessWidget {
             image: itemModel.image,
           ),
           const Gap(5),
-          Text(
-            itemModel.title,
-            style: AppStyle.styleMedium16(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.title,
+              style: AppStyle.styleMedium16(context),
+            ),
           ),
           const Gap(8),
-          Text(
-            itemModel.date,
-            style: AppStyle.styleRegular14(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.date,
+              style: AppStyle.styleRegular14(context),
+            ),
           ),
           const Gap(16),
-          Text(
-            itemModel.price,
-            style: AppStyle.styleSemiBold24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.price,
+              style: AppStyle.styleSemiBold24(context),
+            ),
           ),
         ],
       ),
@@ -65,6 +77,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
       decoration: ShapeDecoration(
         color: const Color(0xff4DB7F2),
         shape: RoundedRectangleBorder(
+          side: const BorderSide(width: 1, color: Color(0xff4DB7F2)),
           borderRadius: BorderRadius.circular(12),
         ),
       ),
@@ -77,20 +90,31 @@ class ActiveAllExpensesItem extends StatelessWidget {
             image: itemModel.image,
           ),
           const Gap(5),
-          Text(
-            itemModel.title,
-            style: AppStyle.styleMedium16(context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.title,
+              style:
+                  AppStyle.styleMedium16(context).copyWith(color: Colors.white),
+            ),
           ),
           const Gap(8),
-          Text(
-            itemModel.date,
-            style: AppStyle.styleRegular14(context)
-                .copyWith(color: const Color(0xFFFAFAFA)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.date,
+              style: AppStyle.styleRegular14(context)
+                  .copyWith(color: const Color(0xFFFAFAFA)),
+            ),
           ),
           const Gap(16),
-          Text(
-            itemModel.price,
-            style: AppStyle.styleSemiBold24(context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.price,
+              style: AppStyle.styleSemiBold24(context)
+                  .copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),
